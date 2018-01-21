@@ -1,0 +1,660 @@
+.wrap{
+    width:100%;
+}
+/*导航*/
+.header{
+    padding:0;
+    width: 100%;
+    height:80px;
+    border-bottom: 1px solid #ccc;
+}
+.header .container{
+    padding: 0;
+    /*width: 1200px;*/
+}
+.logo{
+    background: #004098 !important;
+    height:100%;
+}
+.logo a img{
+    width: 64px;
+    height:64px;
+    margin: 8px auto;
+}
+.nav{
+    height:80px;
+}
+.nav>ul{
+    margin: 10px 0;
+}
+.nav>ul>li{
+    text-align: center;
+    color: rgb(4, 89, 209);
+    padding: 0;
+    position: relative;
+    top:0;
+    left:0;
+}
+.nav>ul>li:hover ul{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    opacity: 1;
+    height: auto;
+}
+.nav>ul>li>ul{
+    position: absolute;
+    top: 50px;
+    left:0;
+    margin: 0;
+    z-index: 999999;
+    overflow: hidden;
+    opacity: 0;
+    height: 0px;
+    transition: all 1s;
+}
+.nav>ul>li>ul>li>a{
+    transition: all 1s;
+}
+.nav>ul>li>ul>li>a:hover{
+    background-color: #9d9d9d;
+    color: white;
+}
+.erji{
+    width: 100%;
+}
+
+.nav ul li a{
+    display: block;
+    padding: 8px;
+}
+.nav ul li a:hover{
+    text-decoration: none;
+}
+.nav ul li span,.nav ul li em{
+    display: block;
+    font-style: normal;
+}
+.nav ul li span{
+    font-size: 16px;
+}
+.nav ul li em{
+    font-size: 12px;
+    /*line-height: 1.42em;*/
+    color: rgb(160, 160, 160);
+}
+.nav ul li .active{
+    color: rgb(4, 89, 209);
+}
+.nav ul li .active em{
+    color: inherit;
+    opacity: 0.5!important;
+}
+.banner{
+    width:100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left:0;
+}
+.banner ul:nth-child(2){
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 590px;
+    padding: 0;
+}
+.banner ul:nth-child(3){
+    width: 100px;
+    overflow: hidden;
+}
+.banner ul:nth-child(2) li{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    transition: 1s;
+}
+.banner ul:nth-child(2) li>div{
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.banner ul:nth-child(2) li>div span{
+    width: 80%;
+    margin: auto;
+}
+.banner ul:nth-child(2) li .bgimg1{
+    background-image: url(../img/banner_bg_1.jpg);
+}
+.banner ul:nth-child(2) li .bgimg1 img{
+    width: 907px;
+    height: 192px;
+    margin: 0 auto 40px;
+    box-sizing: content-box;
+    padding-top: 150px;
+}
+.banner ul:nth-child(2) li .bgimg1 p{
+    /*width:128px;*/
+    box-sizing: content-box;
+    margin:30px auto;
+    padding: 10px 30px;
+    text-align: center;
+}
+.banner ul:nth-child(2) li .bgimg1 p a{
+    cursor: pointer;
+}
+.banner ul:nth-child(2) li .bgimg1 p a,.banner ul:nth-child(2) li .bgimg4 p a{
+    width: 128px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+.banner ul:nth-child(2) li .bgimg1 p a:hover,.banner ul:nth-child(2) li .bgimg4 p a:hover{
+    opacity:.8;
+}
+.banner ul:nth-child(2) li .bgimg2{
+    background-image: url(../img/banner_bg.jpg);
+}
+.banner ul:nth-child(2) li .bgimg2 img{
+    width:847px;
+    margin: 0 auto;
+}
+.banner ul:nth-child(2) li .bgimg3{
+    background-image: url(../img/banner1.jpg);
+}
+.banner ul:nth-child(2) li .bgimg4{
+    background-image: url(../img/banner2.jpeg);
+    text-align: center;
+}
+.banner ul:nth-child(2) li .bgimg4 span:first-child{
+    font-size: 72px;
+    color: white;
+    display: block;
+    padding: 140px 0 60px;
+}
+.banner ul:nth-child(2) li .bgimg4 span:nth-child(2){
+    display: block;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 100px;
+}
+.banner ul:nth-child(2) li .bgimg5{
+    background-image: url(../img/banner.jpg);
+}
+
+/*小圆点*/
+.banner .dot{
+    position: absolute;
+    bottom:30px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+    width: 80px;
+    height: 10px;
+    display: flex;
+    justify-content:space-around;
+    z-index: 50;
+    overflow: hidden;
+}
+.banner .dot li{
+    float: left;
+    cursor: pointer;
+    opacity: .7;
+    width: 8px;
+    height:8px;
+    border-radius: 50%;
+    background-color: white;
+}
+.banner .dot .active{
+    background: #000;
+}
+/*左右按钮*/
+.banner .btn{
+    width:100%;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    z-index: 999;
+}
+.banner .btn span{
+    position: absolute;
+    display: block;
+    width: 60px;
+    height:60px;
+}
+.banner .btn .btn_l{
+    left:0;
+    background: url("../img/btn_left_blue.png") no-repeat 50%;
+}
+.banner .btn .btn_r{
+    right:0;
+    background: url("../img/btn_right.png") no-repeat 50%;
+}
+
+/*内容区域*/
+.content{
+    padding: 0;
+    margin-top: 100px;
+    height: auto;
+    overflow: auto;
+}
+.content .title{
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.content .title::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height:1.5px;
+    background-color: #004098;
+    margin: 0 auto;
+    transition: 1s;
+}
+.content .title:hover::after{
+    width: 200px;
+}
+
+.content .title p {
+    text-align: center;
+}
+.content .title p:nth-child(1){
+    font-size: 24px;
+    height: 50px;
+}
+.content .title p:nth-child(2){
+    font-size: 12px;
+    color: rgb(189, 189, 189);
+    /*margin-bottom: 20px;*/
+}
+.content .con{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.content .con .co{
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+    padding:0;
+}
+.content .con .co_top .co_item{
+    border: 1px solid #9d9d9d;
+    transition: all 1s;
+    opacity: .5;
+}
+.content .con .co_top .co_item:hover{
+    animation: fly .5s ease forwards;
+    opacity: 1;
+}
+@keyframes fly {
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(1turn);
+    }
+
+}
+.content .con .co_top .co_item img:last-child{
+    margin: 15px 0 26px;
+}
+
+.content .designer{
+    margin: 30px 0;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left:0;
+    height: 520px;
+    transition: all .5s;
+    border: 1px solid #eeeeee;
+}
+/*.content .designer:hover{*/
+    /*transform: translateY(10px);*/
+    /*box-shadow: 0 0 30px 1px rgba(100,100,0,.1);*/
+/*}*/
+.content .designer>div{
+    padding:0;
+    overflow: hidden;
+}
+.content .designer .zhezhao{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    background-color: #000;
+    opacity: .3;
+    transition: all 1s;
+}
+.content .designer .zhezhao:hover{
+    opacity: 0;
+}
+.content .designer .jieshao a{
+    display: block;
+    padding: 20%;
+}
+.content .designer .jieshao .imgBox{
+    border-radius: 100%;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left:0;
+}
+.content .designer .jieshao .imgBox img{
+    width:100%;
+    transition: all .5s;
+}
+.content .designer .jieshao:hover img{
+    width: 105%;
+    height:105%;
+}
+.content .designer .jieshao .imgBox .zhe{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom:0;
+    background-color: #000;
+    opacity: .3;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+.content .designer .jieshao .text .text_top{
+    padding-left: 18px;
+} p:first-child{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.content .designer .jieshao .text .text_top p:nth-child(n+1) span{
+    font-size: 14px;
+}
+.content .designer .jieshao .text .bot{
+    text-align: center;
+
+}
+.content .designer .jieshao .text .bot p{
+    margin: 50px auto 0;
+    width: 100px;
+    border: 1px solid #eee;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .5s;
+}
+.content .designer .jieshao .text .bot p:hover{
+    color: white;
+    background-color: #c7254e;
+}
+
+/*设计顾问*/
+.content .guwen{
+    padding:0;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.content .guwen .gw_top{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.content .guwen .gw_top li{
+    width: 20%;
+    float: left;
+    padding:16px 16px 0 16px;
+    text-align: center;
+}
+.content .guwen .gw_bot{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content .guwen .gw_bot li{
+    width: 20%;
+    float: left;
+    padding:16px 16px 0 16px;
+    text-align: center;
+    margin-left: 4%;
+}
+.content .guwen li p{
+    opacity: 0;
+    transition: all 1s;
+}
+.content .guwen li p:nth-child(2){
+    font-size: 18px;
+    margin: 0;
+    margin-top: 10px;
+    color: #c7254e;
+}
+.content .guwen li p:nth-child(3){
+    margin: 0;
+    padding:0;
+}
+.content .guwen li:hover p{
+    opacity: 1;
+}
+.content .guwen li img{
+    transition: all .5s;
+}
+.content .guwen li:hover img{
+    border-radius: 100%;
+    transform: translateY(-5px);
+    /*box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.22);*/
+}
+.content .kehu{
+    height:auto;
+    margin-top:30px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left:0;
+    padding:0 0 20px 0;
+}
+.content .kehu ul{
+    width: 125%;
+    padding: 10px 0 0;
+    height:220px;
+    overflow: hidden;
+}
+.content .kehu li{
+    width: 20%;
+    height: 100%;
+    float: left;
+    transition: all .5s;
+}
+.content .kehu li:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px 1px rgba(200,100,0,.1);
+}
+.content .kehu li a{
+    display: block;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left:0;
+}
+.content .kehu li p{
+    width: 100%;
+    height:25%;
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+    line-height: 40px;
+    background-color: #000000;
+    opacity: .5;
+    position: absolute;
+    bottom: -25%;
+    margin: 0;
+    transition: all .5s;
+}
+.content .kehu li:hover p{
+    bottom: 0;
+}
+.content .kehu .btn{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+}
+.content .kehu .btn span{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 60px;
+    height:60px;
+    cursor: pointer;
+}
+.content .kehu .btn .btn_left{
+    left:0;
+    background: url("../img/btn_left.png") no-repeat 50%;
+}
+.content .kehu .btn .btn_right{
+    right:0;
+    background: url("../img/btn_right_ccc.png") no-repeat 50%;
+}
+.content .kehu .dot{
+    width: 40px;
+    margin: 0 auto;
+    height: 8px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right:0;
+    z-index: 10;
+}
+.content .kehu .dot div{
+    float: left;
+    margin-left:8px;
+    width: 8px;
+    height:8px;
+    border-radius: 50%;
+    background: #ccc;
+    opacity: .5;
+    cursor: pointer;
+}
+.content .kehu .dot .active{
+    background: #000;
+}
+.content .dapei{
+    margin: 50px 0;
+    padding: 0 0 50px 0;
+    border-bottom: 1px solid #eee;
+}
+.content .dapei ul{
+    width:100%;
+    overflow: hidden;
+}
+.content .dapei ul li{
+    overflow: hidden;
+    margin: 20px auto;
+}
+.content .dapei ul li div{
+    float: left;
+}
+.content .dapei ul li .dl{
+    width: 15%;
+}
+.content .dapei ul li .dl .dp_img{
+    width: 100%;
+}
+.content .dapei ul li .dr{
+    width: 65%;
+    margin-left: 20%;
+}
+.content .dapei ul li .dr p{
+    margin: 0;
+    text-align: left;
+}
+.content .dapei ul li img{
+    width: 100%;
+}
+.content .yuyue>div{
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.content .yuyue .yu_left{
+    padding-top: 50px;
+    text-align: center;
+}
+.content .yuyue .yu_left::after{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: #004098;
+    margin: 20px auto;
+    transition: all 1s;
+}
+.content .yuyue .yu_left:hover:after{
+    width: 80%;
+}
+.content .yuyue .yu_left img{
+    width: 50%;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    float: none;
+}
+.content .yuyue .yu_left p{
+    color: #e0e0e0;
+}
+.content .yuyue .yu_input input{
+    width: 80%;
+    height: 40px;
+    font-size: 16px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.content .yuyue .yu_input select{
+    height: 40px;
+    padding: 0 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.content .yuyue .yu_input [type='button']{
+    background: #fff;
+    border: 1px solid #004098;
+    width: 50%;
+    color: #004098;
+    transition: all 1s;
+    margin: 20px 10% 0;
+}
+.content .yuyue .yu_input [type='button']:hover{
+    background: #004098;
+    color: white;
+}
+.content .yuyue .yu_right img{
+    width: 60%;
+    margin: 0 auto;
+}
+.content .yuyue .yu_right p{
+    text-align: center;
+}
+
+
+
+
