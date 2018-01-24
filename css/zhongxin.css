@@ -118,7 +118,9 @@
 .content .con_nav ul li:last-child a{
     color: #9d9d9d;
 }
-
+.hot{
+    color: rgb(4, 89, 209);
+}
 
 /*左侧*/
 .content .con_main{
